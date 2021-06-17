@@ -1,4 +1,4 @@
-cr4#include <stdio.h>
+#include <stdio.h>
 #include <unistd.h> /*calls system call that write data out of buffer*/
 
 /**
