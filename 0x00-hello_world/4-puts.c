@@ -8,7 +8,7 @@ int main(void)
 	
 	for(i=0;s[i];i++)
 	{
-		putc(s);
+		putc(i);
 	}
 	return 0;
 }
