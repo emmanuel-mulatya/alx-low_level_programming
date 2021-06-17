@@ -4,11 +4,6 @@
 int main(void)
 {
 	char s[] = "with propper grammar, but the outcome is a piece of art,\n";
-	int i;
-	
-	for(i=0;s[i];i++)
-	{
-		putc(i);
-	}
+	puts(s);
 	return 0;
 }
