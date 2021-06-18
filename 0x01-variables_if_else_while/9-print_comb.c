@@ -16,7 +16,7 @@ int main(void)
 
 	i = 48;
 
-		while (j <= 57)
+		while (i <= 57)
 		{
 			putchar(i);
 
