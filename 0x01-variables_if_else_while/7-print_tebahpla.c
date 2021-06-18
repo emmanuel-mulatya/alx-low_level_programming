@@ -13,7 +13,7 @@ int main(void)
 	int i, a, z, nl;
 
 	a = 97;
-	z - 122;
+	z = 122;
 	nl = 10;
 
 	for (i = z; i >= a; i--)
