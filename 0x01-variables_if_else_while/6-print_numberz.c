@@ -17,7 +17,7 @@ int main(void)
 	nine = 57;
 	nl = 10;
 
-	for (int = zero; i <= nine; i++)
+	for (int i = zero; i <= nine; i++)
 		putchar(i);
 
 	putchar(nl);
