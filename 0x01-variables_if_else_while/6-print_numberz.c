@@ -11,13 +11,13 @@
 
 int main(void)
 {
-	int zero, nine, nl;
+	int i, zero, nine, nl;
 
 	zero = 48;
 	nine = 57;
 	nl = 10;
 
-	for (int i = zero; i <= nine; i++)
+	for (i = zero; i <= nine; i++)
 		putchar(i);
 
 	putchar(nl);
