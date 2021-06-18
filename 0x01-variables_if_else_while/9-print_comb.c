@@ -20,7 +20,7 @@ int main(void)
 		{
 			putchar(i);
 
-			if ((i < 56) || (j < 57))
+			if ((i < 57))
 			{
 				putchar(44);
 				putchar(32);
