@@ -12,18 +12,13 @@
 int main(void)
 {
 	/* 0 = 48, 9 = 57, comma = 44, comma = 32, space = 32, nextline = 10 */
-	int i, j;
+	int i;
 
-	i = j = 48;
-
-	while (i <= 57)
-	{
-		j = i + 1;
+	i = 48;
 
 		while (j <= 57)
 		{
 			putchar(i);
-			putchar(j);
 
 			if ((i < 56) || (j < 57))
 			{
@@ -31,9 +26,7 @@ int main(void)
 				putchar(32);
 			}
 
-			j++;
-		}
-		i++;
+			i++;
 	}
 
 	putchar(10);
