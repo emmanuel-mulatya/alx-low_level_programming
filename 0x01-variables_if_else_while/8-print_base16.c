@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int a, z, zero, nine, nl, i;
+	int a, f, zero, nine, nl, i;
 
 	a = 97;
 	f = 102;
