@@ -1,31 +1,40 @@
 #include <stdio.h>
+
 /**
- *main - prints main function
- *takes no arguments
+ *main - this is the main function
+ *it takes no arguments
  *
- *prints 0 -9 with commas and space
+ *prints double characters with commas and spaces
  *
- *Return: 0
+ *Return: o
  **/
 
 int main(void)
 {
-	int cm, spc, zero, nine;
+	/* 0 = 48, 9 = 57, comma = 44, comma = 32, space = 32, nextline = 10 */
+	int i, j;
 
-	cm = 44;
-	spc = 32;
-	zero = 48;
-	nine = 57;
+	i = j = 48;
 
-	do {
-		putchar(zero);
-		if (zero != 57)
+	while (i <= 57)
+	{
+		j = i + 1;
+
+		while (j <= 57)
 		{
-			putchar(cm);
-			putchar(spc);
+			putchar(i);
+			putchar(j);
+
+			if ((i < 56) || (j < 57))
+			{
+				putchar(44);
+				putchar(32);
+			}
+
+			j++;
 		}
-		zero++;
-	} while (zero <= nine);
+		i++;
+	}
 
 	putchar(10);
 	return (0);
