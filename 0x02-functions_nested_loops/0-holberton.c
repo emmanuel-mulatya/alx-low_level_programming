@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "_putchar.c"
 /**
  *main - the main function
  *
@@ -6,7 +7,15 @@
  **/
 int main(void)
 {
-	printf("Holbrton\n");
+	char s[] = "Holberton";
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar(10);
 
 	return (0);
 }
