@@ -8,44 +8,51 @@
 
 void print_times_table(int n)
 {
+	int row, column, fc, sc, tc, mult;
 	if ((n < 0) || (n > 15))
 	{
-		_putchar('\n');
 	}
 	else
 	{
-	int row, column, fc, sc, mult;
-
-	for (row = 0; row <= n; row++)
-	{
-		for (column = 0; column <= n; column++)
+		for (row = 0; row <= n; row++)
 		{
-			mult = row * column;
-			fc = mult / 10;
-			sc = mult % 10;
+			for (column = 0; column <= n; column++)
+			{
+				mult = row * column;
+				fc = mult / 100;
+				sc = mult /10;
+				tc = mult % 10;
 
-			if (column == 0)
-			{
-				_putchar('0');
+				if (column == 0)
+				{
+					_putchar('0');
+				}
+				else if (mult < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(tc + '0');
+				}
+				else if ((mult < 100) && (mult < 10))
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(sc + '0');
+					_putchar(tc + '0');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(fc + '0');
+					_putchar(sc + '0');
+					_putchar(tc + '0');
+				}
 			}
-			else if (mult < 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(sc + '0');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(fc + '0');
-				_putchar(sc + '0');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
-	}
 
 	}
-
-}
