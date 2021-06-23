@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
-  *main - check the code for ALX School students.
+  *print_last_digit - prints the last digit
+  *@c: takes one argument of type int
   *
-  *Return: Always 0.
+  *Return: last
   */
-int main(void)
+int print_last_digit(int c)
 {
-	int r;
+	int last = c % 10;
 
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
-	return (0);
+	if (c < 0)
+		last = last * -1;
+	_putchar(last + '0');
+
+	return (last);
 }

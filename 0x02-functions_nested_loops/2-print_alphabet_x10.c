@@ -1,12 +1,24 @@
 #include "holberton.h"
 
 /**
-  *main - check the code for ALX School students.
-  *
-  *Return: Always 0.
+  *print_alphabet_x10 - prints lowercase 10 times
   */
-int main(void)
+
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return (0);
+	int a;
+	int i = 0;
+
+	while (i < 9)
+	{
+		a = 97;
+
+		while (a <= 122)
+		{
+			_putchar(a);
+			a++;
+		}
+		putchar(10);
+		i++;
+	}
 }

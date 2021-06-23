@@ -1,12 +1,48 @@
 #include "holberton.h"
 
 /**
-  *main - check the code for ALX School Students.
+  * jack_bauer - prints time in 24 hours
   *
-  *Return: Always 0.
+  *Return: nothing
   */
-int main(void)
+
+void jack_bauer(void)
 {
-	jack_bauer();
-	return (0);
+	int H, h, M, m, max;
+
+	max = 58;
+	H = '0';
+	while (H < '3')
+	{
+		if (H == '2')
+		{
+			max = '4';
+		}
+		h = '0';
+		while (h < max)
+		{
+			M = '0';
+			while (M < '6')
+			{
+				m = '0';
+				while (m < 58)
+			{
+					_putchar(H);
+					_putchar(h);
+					_putchar(':');
+					_putchar(M);
+					_putchar(m);
+					_putchar('\n');
+					m++;
+				}
+				m = '0';
+				M++;
+			}
+			M = '0';
+			h++;
+		}
+		h = '0';
+		H++;
+
+	}
 }

@@ -1,12 +1,21 @@
 #include "holberton.h"
+
 /**
-  *main - check the code for ALX School students:
+  *print_alphabet -  prints lowercase alphabet
+  *Takes no arguments
   *
-  *Return: Always 0,
+  *reads ascii values of a-z and uses the _putchar function to print to stdout)
   */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int a = 97;
+
+	while (a <= 122)
+	{
+		_putchar(a);
+		a++;
+
+	}
+	_putchar(10);
 }

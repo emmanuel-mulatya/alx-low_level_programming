@@ -1,15 +1,19 @@
 #include "holberton.h"
 
-/**
-  * main - check the code for ALX School students.
-  *
-  *Return: Always 0.
-  */
-int main(void)
-{
-	int n;
 
-	n = add(89, 9);
-	printf("%d\n", n);
-	return (0);
+/**
+  * add - adds two integers
+  *@i: First argument
+  *@j: second argument
+  *
+  *Return: result
+  */
+
+int add(int i, int j)
+{
+	int result;
+
+	result = i + j;
+
+	return (result);
 }
