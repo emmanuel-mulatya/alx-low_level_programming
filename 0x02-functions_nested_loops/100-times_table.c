@@ -20,14 +20,14 @@ void print_times_table(int n)
 			{
 				mult = row * column;
 				fc = mult / 100;
-				sc = mult /10;
+				sc = (mult /10) % 10;
 				tc = mult % 10;
 
 				if (column == 0)
 				{
 					_putchar('0');
 				}
-				else if (mult < 100)
+				else if (mult < 10)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -35,7 +35,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(tc + '0');
 				}
-				else if ((mult < 100) && (mult < 10))
+				else if ((mult < 100) && (mult <= 10))
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -43,7 +43,7 @@ void print_times_table(int n)
 					_putchar(sc + '0');
 					_putchar(tc + '0');
 				}
-				else
+				else if (mult > 99 && mult <1000)
 				{
 					_putchar(',');
 					_putchar(' ');
