@@ -2,17 +2,12 @@
 /**
   *print_times_table - prints multiples of a given integer
   *@n: takes arguments of integer data type
-  *
-  *Return: Nothing
   */
-
 void print_times_table(int n)
 {
 	int row, column, mult;
 
 	if ((n < 0) || (n > 15))
-	{
-	}
 	else
 	{
 		for (row = 0; row <= n; row++)
@@ -47,10 +42,6 @@ void print_times_table(int n)
 					_putchar((mult / 100) + '0');
 					_putchar((mult / 10) % 10 + '0');
 					_putchar((mult % 10) + '0');
-				}
-			}
+				}}
 			_putchar('\n');
-		}
-
-	}
-}
+		}}}
