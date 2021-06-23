@@ -9,6 +9,7 @@
 void print_times_table(int n)
 {
 	int row, column, fc, sc, tc, mult;
+
 	if ((n < 0) || (n > 15))
 	{
 	}
@@ -19,10 +20,6 @@ void print_times_table(int n)
 			for (column = 0; column <= n; column++)
 			{
 				mult = row * column;
-				fc = mult / 100;
-				sc = (mult / 10) % 10;
-				tc = mult % 10;
-
 				if (column == 0)
 				{
 					_putchar('0');
@@ -33,23 +30,23 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(tc + '0');
+					_putchar((mult % 10) + '0');
 				}
 				else if ((mult < 100) && (mult >= 10))
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(sc + '0');
-					_putchar(tc + '0');
+					_putchar((mult / 10) % 10) + '0');
+					_putchar((mult % 10) + '0');
 				}
-				else if (mult > 99 && mult <1000)
+				else if (mult > 99 && mult < 1000)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(fc + '0');
-					_putchar(sc + '0');
-					_putchar(tc + '0');
+					_putchar((mult / 100) + '0');
+					_putchar((mult / 10) % 10 + '0');
+					_putchar((mult % 10) + '0');
 				}
 			}
 			_putchar('\n');
