@@ -25,7 +25,7 @@ int main(void)
 		fc = sc;
 		sc = c;
 	}
-	printf("%li\n", c);
+	printf("%li\n", sum);
 
 	return (0);
 
