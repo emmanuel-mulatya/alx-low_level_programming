@@ -7,10 +7,7 @@ void print_times_table(int n)
 {
 	int row, column, mult;
 
-	if ((n > 0) || (n < 15))
-	{}
-	else
-	{
+	if ((n >= 0) && (n < 15))
 		for (row = 0; row <= n; row++)
 		{
 			for (column = 0; column <= n; column++)
@@ -45,4 +42,4 @@ void print_times_table(int n)
 					_putchar((mult % 10) + '0');
 				}}
 			_putchar('\n');
-		}}}
+		}}
