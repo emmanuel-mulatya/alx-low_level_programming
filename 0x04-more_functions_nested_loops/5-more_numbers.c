@@ -12,11 +12,11 @@ void more_numbers(void)
 	second = 0;
 	max = '9';
 
-	for (i = 0; i < 10 < i++)
+	for (i = 0; i < 10; i++)
 	{
 		while (second < 2)
 		{
-			while (n <= limit)
+			while (n <= max)
 			{
 				if (n == 4)
 					_putchar('1');
@@ -25,7 +25,7 @@ void more_numbers(void)
 			}
 			second++;
 			max = '4';
-			n = '0'
+			n = '0';
 		}
 		_putchar(10);
 		second = 0;
