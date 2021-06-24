@@ -5,7 +5,7 @@
   *@n: takes an argument of int type
   */
 
-void print_line(int n);
+void print_line(int n)
 {
 	int i;
 
