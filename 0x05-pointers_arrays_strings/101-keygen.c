@@ -14,15 +14,16 @@ void randomPass( int N)
 {
 	int i ;
 	int random;
+	char numbers[], lower[], upper[], symbol;
 
 	i = random = 0;
 
 	srand((unsigned int)(time(NULL)));
 
-	char numbers[] = "0123456789";
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
-	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char symbol[] = "!@#$%^&*?";
+	 numbers = "0123456789";
+	lower = "abcdefghijklmnopqrstuvwxyz";
+	upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	symbol = "!@#$%^&*?";
 	char pass[N];
 
 	random = rand() % 4;
