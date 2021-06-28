@@ -23,7 +23,7 @@ void randomPass( int N)
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbol[] = "!@#$%^&*?";
-	char password[N];
+	char pass[N];
 
 	random = rand() % 4;
 
@@ -31,27 +31,27 @@ void randomPass( int N)
 	{
 		if (random == 1)
 		{
-			password[i] = numbers[rand() % 10];
+			pass[i] = numbers[rand() % 10];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pass[i]);
 		}
 		else if (random == 2)
 		{
-			password[i] = symbol[rand() % 8];
+			pass[i] = symbol[rand() % 8];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pass[i]);
 		}
 		else if (random == 3)
 		{
-			password[i] = upper[rand() % 26];
+			pass[i] = upper[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pass[i]);
 		}
 		else
 		{
-			password[i] = lower[rand() % 26];
+			pass[i] = lower[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pass[i]);
 		}
 	}
 	putchar(10);
