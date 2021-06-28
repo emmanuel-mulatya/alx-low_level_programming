@@ -8,7 +8,7 @@
 
 void puts_half(char *str)
 {
-	int count, i, max;
+	int count, i, max, j;
 
 	count = 0;
 
@@ -16,10 +16,7 @@ void puts_half(char *str)
 		count++;
 	max = count;
 	i = (max - 1) / 2;
-	while (i <= max)
-	{
-		_putchar(str[i]);
-		++i;
-	}
+	for (j = i + 1; j <= max; j++)
+		_putchar(s[j]);
 	_putchar('\n');
 }
