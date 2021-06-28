@@ -17,8 +17,8 @@ void print_rev(char *s)
 	for (i = 0; i < reverse; i++)
 	{
 		tmp = s[i];
-		s[i] = s[rewind];
-		s[rewind] = tmp;
+		s[i] = s[reverse];
+		s[reverse] = tmp;
 		reverse--;
 	}
 	_putchar('\n');
