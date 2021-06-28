@@ -14,7 +14,7 @@ void randomPass( int N)
 {
 	int i ;
 	int random;
-	char numbers[], lower[], upper[], symbol;
+	char numbers[10], lower[26], upper[26], symbol[8];
 
 	i = random = 0;
 
