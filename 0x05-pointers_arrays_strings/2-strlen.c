@@ -8,7 +8,7 @@
 
 int _strlen(chsr *s)
 {
-	int length;
+	int length = 0;
 
 	while (s[length] != '\0')
 	{
