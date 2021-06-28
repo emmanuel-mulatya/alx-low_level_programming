@@ -54,6 +54,7 @@ void randomPass( int N)
 			printf("%c", password[i]);
 		}
 	}
+	putchar(10);
 }
 
 int main(void)
