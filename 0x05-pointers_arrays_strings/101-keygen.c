@@ -37,7 +37,7 @@ void randomPass( int N)
 		}
 		else if (random == 2)
 		{
-			password[i] = symbols[rand() % 8];
+			password[i] = symbol[rand() % 8];
 			random = rand() % 4;
 			printf("%c", password[1]);
 		}
@@ -47,7 +47,7 @@ void randomPass( int N)
 			random = rand() % 4;
 			printf("%c", password[1]);
 		}
-		else (random == 1)
+		else
 		{
 			password[i] = numbers[rand() % 26];
 			random = rand() % 4;
