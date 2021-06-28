@@ -49,7 +49,7 @@ void randomPass( int N)
 		}
 		else
 		{
-			password[i] = numbers[rand() % 26];
+			password[i] = lower[rand() % 26];
 			random = rand() % 4;
 			printf("%c", password[i]);
 		}
