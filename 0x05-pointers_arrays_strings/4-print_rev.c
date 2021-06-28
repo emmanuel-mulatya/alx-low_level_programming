@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int length, reverse, i;
 
 	length = _strlen(s);
-	rewind = length - 1;
+	reverse = length - 1;
 
 	for (i = 0; i < rewind; i++)
 	{
