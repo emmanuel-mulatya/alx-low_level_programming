@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 
 	while (i < n)
 	{
-		while ( a[i} != n  1)
+		while ( i != n - 1)
 		{	printf("%d", a[i]);
 			_putchar(',');
 			_putchar(' ');
