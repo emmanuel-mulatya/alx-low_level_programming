@@ -10,18 +10,21 @@
 
 void print_array(int *a, int n)
 {
-	int i;
+	int i, count;
 
 	i = 0;
+	count = 1;
 
-	while (i < n)
+	if (n < 0)
+		n = 0;
+	else if (n > 0)
 	{
-		while ( i != n - 1)
-		{	printf("%d", a[i]);
-			_putchar(',');
-			_putchar(' ');
+		while (a[i] != '\0' && count < n)
+		{
+			printf("%d, ", a[i]);
+			i++;
+			count++;
 		}
-		i++;
+		printf("%d\n", a[i]);
 	}
-	printf("\n");
 }
