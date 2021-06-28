@@ -14,12 +14,12 @@ void print_rev(char *s)
 	length = _strlen(s);
 	reverse = length - 1;
 
-	for (i = 0; i < rewind; i++)
+	for (i = 0; i < reverse; i++)
 	{
 		tmp = s[i];
 		s[i] = s[rewind];
 		s[rewind] = tmp;
-		rewind--;
+		reverse--;
 	}
 	_putchar('\n');
 }
