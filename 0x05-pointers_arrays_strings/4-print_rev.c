@@ -8,18 +8,20 @@
 
 void print_rev(char *s)
 {
-	char tmp;
-	int length, reverse, i;
+	char rev[];
+	int i, j, count = 0;
 
-	length = _strlen(s);
-	reverse = length - 1;
-
-	for (i = 0; i < reverse; i++)
+	while (s[count] != '\0')
 	{
-		tmp = s[i];
-		s[i] = s[reverse];
-		s[reverse] = tmp;
-		reverse--;
+		count++;
+	}
+	j = count - 1;
+
+	for (i = 0; i < count; i++)
+	{
+		rev[i] = s[j];
+		j--;
+
 	}
 	_putchar('\n');
 }
