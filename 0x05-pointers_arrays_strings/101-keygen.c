@@ -33,25 +33,25 @@ void randomPass( int N)
 		{
 			password[i] = numbers[rand() % 10];
 			random = rand() % 4;
-			printf("%c", password[1]);
+			printf("%c", password[i]);
 		}
 		else if (random == 2)
 		{
 			password[i] = symbol[rand() % 8];
 			random = rand() % 4;
-			printf("%c", password[1]);
+			printf("%c", password[i]);
 		}
 		else if (random == 3)
 		{
 			password[i] = upper[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[1]);
+			printf("%c", password[i]);
 		}
 		else
 		{
 			password[i] = numbers[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[1]);
+			printf("%c", password[i]);
 		}
 	}
 }
