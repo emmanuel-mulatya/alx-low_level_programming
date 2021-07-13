@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
-  *strdup - returns pointer to newly allocated space
+  *_strdup - returns pointer to newly allocated space
   *which contains a copy of the string given
   *@str: A string
   *
