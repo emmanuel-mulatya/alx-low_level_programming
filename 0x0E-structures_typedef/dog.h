@@ -14,4 +14,10 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+  *dog_t - Typedef for structure dog
+  */
+
+typedef struct dog dog_t;
 #endif /*DOG_H */
